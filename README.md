@@ -8,13 +8,13 @@ Codes run on a server with an Xeon 2.00GHz and 256GB memory running Ubuntu 18.04
 
 ## Dataset file format
 
-    Each event (i.e., temporal edge) consists of vertex1, vertex2, timestamp
+* Each event (i.e., temporal edge) consists of vertex1, vertex2, timestamp
 
-        vertex1, vertex2: participate in the vertices of the event
+    * vertex1, vertex2: participate in the vertices of the event
 
-        timestamp: the time when the event happens
+    * timestamp: the time when the event happens
 
-    the timestamp of any event must be sorted in ascending order
+* the timestamp of any event must be sorted in ascending order
 
 ## Compile and Run
 
