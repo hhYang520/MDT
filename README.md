@@ -1,6 +1,6 @@
 # Code for MDT Algorithm 
 This repository contains a reference implementation of the algorithms for the paper:
-Towards Truss-Based Temporal Community Search. Anonymous. Submit to KDD2025
+Towards Truss-Based Temporal Community Search.
 
 ## Environment
 
