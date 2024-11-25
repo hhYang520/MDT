@@ -1,6 +1,6 @@
 # Code for MDT Algorithm 
 This repository contains a reference implementation of the algorithms for the paper:
-Towards Truss-Based Temporal Community Search.
+Towards Fast Truss-Based Dense Temporal Community Search
 
 ## Environment
 
