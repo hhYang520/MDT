@@ -1,43 +1,69 @@
 #pragma once
-#pragma once
-
-/*
- * defines.h
- *
- *  Created on: 6Dec.,2017
- *      Author: Lijun Chang
- *      Email: ljchang@outlook.com
- */
-
-#ifndef DEFINES_H_
-#define DEFINES_H_
-
-#include <ctime>
-#include <cstdlib>
-#include <cstdio>
-#include <cmath>
-#include <cstring>
-#include <string>
-#include <vector>
 #include <algorithm>
-#include <sstream>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <fstream>
 #include <iostream>
-#include <queue>
-#include <stack>
-#include <set>
+#include <list>
 #include <map>
-#include "temp_truss.h"
+#include <queue>
+#include <set>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 
 #define NDEBUG // must precede cassert to disable assert.
 #include <cassert>
 
+using namespace std;
+
 using ui = int;
-using up = sedge;
-
 #define pb push_back
-#define mp make_pair
 
-enum GraphStore { uncompressed, byte_compressed, nibble_compressed };
-enum GraphOrientation { original_graph, degree_oriented };
+map<int, int> vertices;
 
-#endif /* DEFINES_H_ */
+vector<vector<int>> singleTime;
+vector<int> deltaMaxK;
+
+vector<int> offset;
+vector<int> targets;
+
+vector<vector<int>> adjEdges;
+
+int tMin, tMax;
+
+class sEdge {
+ public:
+  vector<int> triangles;
+  vector<int> deltaTruss;
+  int support;
+
+  sEdge() {
+    support = 0;
+  }
+};
+vector<sEdge> sEdges;
+
+class sTriangle {
+ public:
+  int e1, e2, e3;
+  int minDelta;
+
+  sTriangle(int a, int b, int c) {
+    e1 = a;
+    e2 = b;
+    e3 = c;
+    minDelta = -1;
+  }
+};
+vector<sTriangle> sTriangles;
+
+class subGraph {
+ public:
+  unordered_map<int, int> wEdges;
+  unordered_map<int, int> triangles;
+};
