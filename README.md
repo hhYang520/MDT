@@ -1,4 +1,4 @@
-# Code for MDT Algorithm 
+# Codes for two search strategies for *MDT*s
 This repository contains a reference implementation of the algorithms for the paper:
 Towards Fast Truss-Based Dense Temporal Community Search
 
@@ -18,7 +18,7 @@ Codes run on a server with an Xeon 2.00GHz and 256GB memory running Ubuntu 18.04
 
 ## Codes description
 
-The code includes two search strategies: global strategy and index strategy.
+The codes include two search strategies: global strategy and index strategy.
 
 Graph_IO.h reads the dataset from /data and stores it in memory.
 
