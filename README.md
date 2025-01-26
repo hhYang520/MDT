@@ -16,9 +16,9 @@ Codes run on a server with an Xeon 2.00GHz and 256GB memory running Ubuntu 18.04
 
 * the timestamp of any event must be sorted in ascending order
 
-## Compile and Run
+## Codes description
 
-The code includes three search strategies: global strategy, local strategy, and index strategy.
+The code includes two search strategies: global strategy and index strategy.
 
 Graph_IO.h reads the dataset from /data and stores it in memory.
 
@@ -34,15 +34,15 @@ print.h contains some print output functions.
 
 /index: contains the built index.
 
-To compile and run the code:
+## Compile and Run
 
-// Compile and run GS (Global Search) algorithm
+// Compile and run global strategy
 
 Compile: g++ -std=c++11 global.cpp -o global
 
 Run: ./global filePath filename
 
-// Compile and run TTS algorithm
+// Compile and run index strategy
 
 Compile: g++ -std=c++11 TTS.cpp -o TTS
 
