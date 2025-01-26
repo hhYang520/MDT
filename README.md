@@ -35,9 +35,15 @@ print.h contains some print output functions.
 /index: contains the built index.
 
 To compile and run the code:
+
 // Compile and run GS (Global Search) algorithm
+
 Compile: g++ -std=c++11 global.cpp -o global
+
 Run: ./global filePath filename
+
 // Compile and run TTS algorithm
+
 Compile: g++ -std=c++11 TTS.cpp -o TTS
+
 Run: ./TTS filePath filename
